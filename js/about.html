@@ -1,0 +1,84 @@
+<!-- Paste this into EVERY HTML file and customise the <title> and <main> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <!-- REQUIRED for responsive design on mobile -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio of [Your Name] — Computing student at [University]">
+  <title>Naeema | Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Prata&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/syle.css">
+</head>
+<body>
+
+  <!-- Skip link: allows keyboard users to skip the nav -->
+  <a href="#main" class="skip-link">Skip to main content</a>
+
+  <header>
+    <div class="container">
+      <a href="index.html" class="logo">Naeema</a>
+      <nav aria-label="Main navigation">
+        <ul>
+          <!-- Add class="active" to the current page's link -->
+          <li><a href="index.html" >Home</a></li>
+          <li><a href="about.html" class="active">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+   <section class="about-section">
+  <div class="container about-grid">
+
+    <aside>
+      <!-- Profile photo -->
+      <img src="/images/IMG_1287.JPG"
+           alt="Naeema — profile photo"
+           class="profile-img">
+      <h3>Naeema </h3>
+      <p class="role">Computing Student, Year 2</p>
+    </aside>
+
+    <div>
+      <h2>About Me</h2>
+      <p>I am a 19 yr old girl trying to navigate this confusing journey known as life. <br>I love to read novels in my free time, If I have any. <br>I love matcha, "it tastes like grass" is not tolerated around these parts. <br>I would love to develop new food products that are delicious yet nutritious. </p>
+
+      <h3>Technical Skills</h3>
+      <ul class="skills-list">
+        <li>Computer Networking (OSI, TCP/IP, subnetting)</li>
+        <li>HTML5 & CSS3</li>
+        <li>Cisco Packet Tracer</li>
+        <li>React js</li>
+        <li>Javascript</li>
+        <li>Python</li>
+      </ul>
+
+      <h3>Education</h3>
+      <table>
+        <thead>
+          <tr><th>Qualification</th><th>Institution</th><th>Year</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>BSc Computing</td><td>Jomo Kenyatta University of Agriculture and Technology</td><td>2024–Present</td></tr>
+          <tr><td>KCSE</td><td>Moi girls school Nairobi</td><td>2023</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; <span id="year"></span> Naeema  — ICS 2215, Dept. of Computing</p>
+    </div>
+  </footer>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
